@@ -1,0 +1,251 @@
+/* this is a comment */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  font-family: "Alfa Slab One", cursive;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  color: pink;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  background: pink;
+  width: 240px;
+  height: 100vh;
+}
+
+header h1 {
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  display: block;
+  width: 100%;
+  font-size: 80px;
+  line-height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 60px;
+  margin-left: -20px;
+  
+}
+
+header h1:hover {
+  color: rgb(148, 104, 104);
+  transition: color 0.3s ease-in-out;
+}
+
+main {
+  background: white;
+  margin-left: 240px;
+  position: relative;
+  background-image: url(/img/abstract-pink-watercolor-paint-brush-splash-splatter_548264-563.jpg);
+  background-size: cover;
+}
+
+nav {
+  background: pink;
+  position: fixed;
+  z-index: 50;
+  margin-top: -100px;
+  width: 40%;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 40px 60px pink;
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  color: rgb(148, 104, 104);
+  display: block;
+  font-family: "Alfa Slab One", cursive;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { 
+  flex: 1 1 50%; 
+}
+
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
+
+h3 {
+  margin: center; 
+  margin-left: 450px;
+  margin-top: 100px;
+  margin-bottom: -10px;
+  font-family: "anisette-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 105px;
+  padding-top: 20px;
+  color: rgb(148, 104, 104);
+  background: -webkit-linear-gradient(pink, white);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px pink;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+nav a {
+  color: rgb(148, 104, 104);
+  text-decoration: none;
+  font-family: "Alfa Slab One", cursive;
+  padding: 30px 15px;
+  display: inline-block;
+}
+
+section {
+  z-index: 30;
+  padding: 100px 40px 40px 40px;
+  min-height: 100vh;
+}
+
+section h2 {
+  font-family: "Alfa Slab One", cursive;
+  color: rgb(148, 104, 104);
+  font-size: 40px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: white;
+}
+
+p {
+  font-family: "Alfa Slab One", cursive;
+}
+
+.p1 {
+  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Source Code Pro', monospace;
+}
+.p2 {
+  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(148, 104, 104);
+  display: block;
+  margin-left: 300px;
+  text-transform: blur;
+  margin-bottom: 60px;
+  margin-right: 60px;
+}
+
+.p3 {
+  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(148, 104, 104);
+  display: block;
+  margin-left: auto middle;
+  text-transform: blur;
+  margin-bottom: 60px;
+  margin-right: 60px;
+}
+
+
+.p4 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 40px;
+  color: rgb(148, 104, 104);
+  
+}
+
+/*.photos {
+  max-height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-color: rgb(148, 104, 104);
+  border-width: 3px;
+} */
+
+#blur-text:hover {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  behavior: smooth;
+}
+
+.last {
+  position: relative;
+  display: inline;
+}
+
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  top: 30px;
+  /* width: 300px; */
+  padding-top: 50px;
+  font-size: 24px;
+  z-index: 99px;
+}
+
+.container:hover > .hidden {
+  visibility: visible;
+  pointer-events: none;
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+}
+
+.photo-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* comment */
+/*font-family: 'Alfa Slab One', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Source Code Pro', monospace;
